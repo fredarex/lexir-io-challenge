@@ -13,26 +13,31 @@ function Header() {
     <div className='fixed bg-white z-50 w-full border-b-2 shadow'>
         <div className='max-w-[1280px] flex items-center justify-between m-auto p-8'>
             {/* logo */}
-            <div className="">
+            <div>
                 <Image src={blackLogo} alt='' width={103} height={24} />
             </div>
-
             {/* Nav link  */}
             <div className="hidden md:flex">
                 <ul className='flex font-medium'>
                     <li className='mr-10'>
                         {/* name */}
-                        <Link href={'/'}>PRODUCTS</Link>
+                        <Link href={'/'}>
+                            <a>PRODUCTS</a>
+                        </Link>
                     </li>
                     <li className='mr-10'>
                         {/* name */}
-                        <Link href={'/'}>BRANDS</Link>
+                        <Link href={'/'}>
+                            <a>BRANDS</a>
+                        </Link>
                     </li>
                     <li className='flex mr-10'>
                         {/* icon */}
                         <Image src={usericon} className='mr-1' />
                         <span className='ml-[10px]'>
-                            <Link  href={'/'}>SIGN IN</Link>
+                            <Link  href={'/'}>
+                                <a>SIGN IN</a>
+                            </Link>
                         </span>
                         {/* name */}
                     </li>
@@ -41,7 +46,9 @@ function Header() {
                         <Image src={carticon}/>
                         {/* name */}
                         <span className='ml-[10px]'>
-                            <Link  href={'/'}>CART</Link>
+                            <Link  href={'/'}>
+                                <a>CART</a>
+                            </Link>
                         </span>
                     </li>
                 </ul>
@@ -56,17 +63,23 @@ function Header() {
                 <ul className=' text-white'>
                     <li className='p-4'>
                         {/* name */}
-                        <Link href={'/'}>PRODUCTS</Link>
+                        <Link href={'/'}>
+                            <a>PRODUCTS</a>
+                        </Link>
                     </li>
                     <li className='p-4'>
                         {/* name */}
-                        <Link href={'/'}>BRANDS</Link>
+                        <Link href={'/'}>
+                            <a>BRANDS</a>
+                        </Link>
                     </li>
                     <li className='flex items-center p-4'>
                         {/* icon */}
                         <FaUserCircle />
                         <span className='ml-[10px]'>
-                            <Link  href={'/'}>SIGN IN</Link>
+                            <Link  href={'/'}>
+                                <a>SIGN IN</a>
+                            </Link>
                         </span>
                         {/* name */}
                     </li>
@@ -75,7 +88,9 @@ function Header() {
                         <FaShoppingCart />
                         {/* name */}
                         <span className='ml-[10px]'>
-                            <Link  href={'/'}>CART</Link>
+                            <Link  href={'/'}>
+                                <a>CART</a>
+                            </Link>
                         </span>
                     </li>
                 </ul>

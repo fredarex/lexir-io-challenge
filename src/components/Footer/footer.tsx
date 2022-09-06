@@ -13,24 +13,24 @@ function Footer() {
             <Image src={whiteLogo} alt="white logo"/>
           </div>
           <div className="flex flex-col items-center lg:flex-row lg:items-start">
-            <div className="grid grid-cols-1 gap-20 sm:grid sm:grid-cols-2 md:grid md:grid-cols-4 mt-4 mb-4 lg:mt-0 lg:mb-0 text-white">
+            <div className="grid grid-cols-1 gap-20 sm:grid sm:grid-cols-2 md:grid md:grid-cols-4 mt-4 mb-4 lg:mt-0 lg:mb-0 lg:flex lg:gap-0 text-white">
               {/*community*/}
               <div className="lg:ml-[96px]">
                 <h6 className="text-[#8F8F8F] uppercase">COMMUNITY</h6>
                 <ul>
                   <li className="mt-4">
                     <Link href='/'>
-                      Lexir for Brands
+                      <a>Lexir for Brands</a>
                     </Link>
                   </li>
                   <li className="mt-4">
                     <Link href='/'>
-                      Business Buyers
+                      <a>Business Buyers</a>
                     </Link>
                   </li>
                   <li className="mt-4">
                     <Link href='/'>
-                      Sales Affiliates
+                      <a>Sales Affiliates</a>
                     </Link>
                   </li>
                 </ul>
@@ -41,17 +41,17 @@ function Footer() {
                 <ul>
                   <li className="mt-4">
                     <Link href='/'>
-                      Resources
+                      <a>Resources</a>
                     </Link>
                   </li>
                   <li className="mt-4">
                     <Link href='/'>
-                      Pricing
+                      <a>Pricing</a>
                     </Link>
                   </li>
                   <li className="mt-4">
                     <Link href='/'>
-                      Get Started
+                      <a>Get Started</a>
                     </Link>
                   </li>
                 </ul>
@@ -62,17 +62,17 @@ function Footer() {
                 <ul>
                   <li className="mt-4">
                     <Link href='/'>
-                      About
+                      <a>About</a>
                     </Link>
                   </li>
                   <li className="mt-4">
                     <Link href='/'>
-                      Contact
+                      <a>Contact</a>
                     </Link>
                   </li>
                   <li className="mt-4">
                     <Link href='/'>
-                      Legal
+                      <a>Legal</a>
                     </Link>
                   </li>
                 </ul>
@@ -83,22 +83,22 @@ function Footer() {
                 <ul>
                   <li className="mt-4">
                     <Link href='/'>
-                      Brands
+                      <a>Brands</a>
                     </Link>
                   </li>
                   <li className="mt-4">
                     <Link href='/'>
-                      Spirits
+                      <a>Spirits</a>
                     </Link>
                   </li>
                   <li className="mt-4">
                     <Link href='/'>
-                      Wine
+                      <a>Wine</a>
                     </Link>
                   </li>
                   <li className="mt-4">
                     <Link href='/'>
-                      Blog
+                      <a>Blog</a>
                     </Link>
                   </li>
                 </ul>
@@ -131,10 +131,14 @@ function Footer() {
             <div>
               <ul className="flex font-medium">
                 <li>
-                  <Link href={'/'}>Privacy</Link>
+                  <Link href={'/'}>
+                    <a>Privacy</a>
+                  </Link>
                 </li>
                 <li className="ml-[10px] sm:ml-[64px]">
-                  <Link href={'/'}>Terms of service</Link>
+                  <Link href={'/'}>
+                    <a>Terms of service</a>
+                  </Link>
                 </li>
               </ul>
             </div>
