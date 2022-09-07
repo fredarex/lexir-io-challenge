@@ -12,13 +12,13 @@ export const fetchProductsStart = () => {
                 payload:''
             });
 
-        const {data}:any = await axios.get('http://localhost:3000/api/products');    
+        const {data}:any = await axios.get('https://lexir-frontend-fredobi.vercel.app/api/products');    
         if(data) {
         dispatch({
                 type: productsTypes.SET_PRODUCTS_START,
                 payload:data
             });      
-        const eventSource = new EventSource('http://localhost:3000/api/products');
+        const eventSource = new EventSource('https://lexir-frontend-fredobi.vercel.app/api/products');
         eventSource.onmessage = function (event) {
             console.log(event.data);
         }
@@ -39,14 +39,14 @@ export  const fetchProductStart = () => {
                 payload:''
             });
 
-        const {data}:any = await axios.get('http://localhost:3000/api/products/1');    
+        const {data}:any = await axios.get(`https://lexir-frontend-fredobi.vercel.app/api/products`);    
         if(data) {
             console.log(data)
         dispatch({
                 type: productsTypes.SET_PRODUCT_START,
                 payload:data.data
             });      
-        const eventSource = new EventSource('http://localhost:3000/api/products/1');
+        const eventSource = new EventSource('https://lexir-frontend-fredobi.vercel.app/api/products');
         eventSource.onmessage = function (event) {
             console.log(event.data);
         }

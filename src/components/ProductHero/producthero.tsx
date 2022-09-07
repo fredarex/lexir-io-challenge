@@ -4,12 +4,12 @@ import { belflag, cocktail, noseicon, party, rhubarb, tongueicon } from 'src/con
 import {AiOutlineMinus, AiOutlinePlus} from 'react-icons/ai';
 import Suggestion from '@components/Suggestion/suggestion';
 import { useSelector,useDispatch } from 'react-redux';
-import { fetchProductStart } from 'src/redux/products/products.actions';
+import { fetchProductsStart, fetchProductStart } from 'src/redux/products/products.actions';
 import { productsState } from 'src/redux/products/products.reducer';
 import ReactCountryFlag from "react-country-flag"
 const mapState = (state:any) => {
     return {
-      product: state.products.product
+      product: state.products.products
     }
   }
 function Producthero():any  {
@@ -17,7 +17,7 @@ function Producthero():any  {
   const dispatch:any = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchProductStart());
+    dispatch(fetchProductsStart());
   },[]);
         return (
             <>
