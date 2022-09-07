@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaShoppingCart, FaUserCircle } from 'react-icons/fa'
 import { blackLogo, carticon, usericon, whiteLogo } from 'src/constant/images';
@@ -9,6 +9,9 @@ function Header() {
     const handleNav = () => {
         setNav(!nav);
     }
+    useEffect(() => {
+        setNav(false);
+    },[]);
   return (
     <div className='fixed bg-white z-50 w-full border-b-2 shadow'>
         <div className='max-w-[1280px] flex items-center justify-between m-auto p-8'>
@@ -54,9 +57,9 @@ function Header() {
                 </ul>
             </div>
             <div onClick={handleNav} className='block md:hidden'>
-                {!nav ? <AiOutlineClose className='cursor-pointer' size={20} /> : <AiOutlineMenu className='cursor-pointer' size={20}/>}
+                {nav ? <AiOutlineClose className='cursor-pointer' size={20} /> : <AiOutlineMenu className='cursor-pointer' size={20}/>}
             </div>
-            <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full  bg-primary ease-in-out duration-500' : 'fixed left-[-100%]'}>
+            <div  className={nav ? 'fixed left-0 top-0 w-[60%] h-full  bg-primary ease-in-out duration-500' : 'fixed left-[-100%]'}>
                 <div className="mt-10 ml-4">
                     <Image src={whiteLogo} alt='' width={103} height={24} />
                 </div>
