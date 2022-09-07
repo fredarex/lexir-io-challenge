@@ -32,7 +32,7 @@ export const fetchProductsStart = () => {
 }
 
 export  const fetchProductStart = () => {
-    return async(dispatch: (arg0: { type: string, payload:any} ) => void) => {
+    return async(dispatch: (arg0: { type: string, payload:{}} ) => void) => {
         try {
             dispatch({
                 type:productsTypes.FETCH_PRODUCT_START,

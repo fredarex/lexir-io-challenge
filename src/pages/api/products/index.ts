@@ -7,6 +7,8 @@ export default async function handler(req:any,res:any) {
     const {method} = req;
     
     switch(method) {
+
+        
         case 'GET':
             setTimeout(() => {
                 res.status(200).json(products)
